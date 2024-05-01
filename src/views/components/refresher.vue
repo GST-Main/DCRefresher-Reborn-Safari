@@ -488,21 +488,23 @@
                 key="tab7"
                 class="tab tab7">
                 <div class="shortcut-lists">
-                    <div
-                        v-for="shortcut in shortcuts"
-                        v-if="shortcut.description.length"
-                        class="refresher-shortcut">
-                        <p class="description">{{ shortcut.description }}</p>
-                        <div class="key">
-                            <refresher-bubble
-                                v-for="key in shortcut.shortcut.match(
-                                    shortcutRegex
-                                )"
-                                :key="key"
-                                :text="key"/>
-                            <refresher-bubble
-                                v-if="!shortcutRegex.test(shortcut.shortcut)"
-                                text="키 없음"/>
+                    <div v-for="shortcut in shortcuts">
+                        <div v-if="shortcut.description">
+                           <div v-if="shortcut.description.length"
+                                class="refresher-shortcut">
+                                <p class="description">{{ shortcut.description }}</p>
+                                <div class="key">
+                                    <refresher-bubble
+                                        v-for="key in shortcut.shortcut.match(
+                                            shortcutRegex
+                                        )"
+                                        :key="key"
+                                        :text="key"/>
+                                    <refresher-bubble
+                                        v-if="!shortcutRegex.test(shortcut.shortcut)"
+                                        text="키 없음"/>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
