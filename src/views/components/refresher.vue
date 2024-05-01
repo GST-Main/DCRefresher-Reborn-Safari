@@ -35,6 +35,7 @@
                     모듈
                 </p>
                 <p
+                    v-if="this.client !== 'Safari'"
                     :class="{ active: tab === 6 }"
                     @click="() => (tab = 6)">
                     단축키
@@ -557,6 +558,7 @@ interface RefresherData {
     blockKeyNames: typeof BLOCK_TYPE_NAMES;
     links: { text: string; url: string }[];
     ipDatabaseVersion: string;
+    client: string;
 }
 
 const port = browser.runtime.connect({name: "refresherInternal"});
@@ -604,7 +606,8 @@ export default Vue.extend({
                     url: "https://www.buymeacoffee.com/green1052"
                 }
             ],
-            ipDatabaseVersion: ""
+            ipDatabaseVersion: "",
+            client: "Unknown"
         };
     },
     methods: {
@@ -691,7 +694,7 @@ export default Vue.extend({
         },
         openShortcutSettings() {
             browser.tabs.create({
-                url: /Firefox/.test(navigator.userAgent)
+                url: this.client === "Firefox"
                     ? "about:addons"
                     : "chrome://extensions/shortcuts"
             });
@@ -976,6 +979,14 @@ export default Vue.extend({
         }
     },
     async mounted() {
+        if (/Safari/.test(navigator.userAgent)) {
+            this.client = "Safari"
+        } else if (/Firefox/.test(navigator.userAgent)) {
+            this.client = "Firefox"
+        } else {
+            this.client = "Chrome"
+        }
+
         setTimeout(() => {
             this.karyl = true;
         }, 10000);
