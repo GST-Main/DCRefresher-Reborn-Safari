@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AB4BFBB2BE33DCB0033B997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB4BFBA2BE33DCB0033B997 /* AppDelegate.swift */; };
+		1AB4BFBD2BE33DCB0033B997 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB4BFBC2BE33DCB0033B997 /* ViewController.swift */; };
+		1AB4BFBF2BE33DCC0033B997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4BFBE2BE33DCC0033B997 /* Assets.xcassets */; };
+		1AB4BFC82BE33E0D0033B997 /* DCRefresher Reborn Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1AD013AC2BDF0DD2002C385E /* DCRefresher Reborn Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1AB4BFD02BE35E0D0033B997 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4BFCF2BE35E0D0033B997 /* Icon.png */; };
+		1AB4BFD22BE3706A0033B997 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB4BFD12BE3706A0033B997 /* WindowController.swift */; };
+		1AB4C06D2BE376A70033B997 /* views in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4C0662BE376A70033B997 /* views */; };
+		1AB4C06E2BE376A70033B997 /* option.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4C0672BE376A70033B997 /* option.bundle.js */; };
+		1AB4C06F2BE376A70033B997 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4C0682BE376A70033B997 /* manifest.json */; };
+		1AB4C0702BE376A70033B997 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4C0692BE376A70033B997 /* assets */; };
+		1AB4C0712BE376A70033B997 /* refresher.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4C06A2BE376A70033B997 /* refresher.bundle.js */; };
+		1AB4C0722BE376A70033B997 /* refresher.bundle.css in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4C06B2BE376A70033B997 /* refresher.bundle.css */; };
+		1AB4C0732BE376A70033B997 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4C06C2BE376A70033B997 /* background.js */; };
+		1AB4C07E2BE3A6600033B997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4C0762BE379F50033B997 /* Main.storyboard */; };
+		1AD013B22BDF0DD2002C385E /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD013B12BDF0DD2002C385E /* SafariWebExtensionHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AB4BFC92BE33E0D0033B997 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AD013872BDF0DD1002C385E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AD013AB2BDF0DD2002C385E;
+			remoteInfo = "DCRefresher Reborn Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1AB4BFCB2BE33E0D0033B997 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1AB4BFC82BE33E0D0033B997 /* DCRefresher Reborn Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1AB4BFB82BE33DCB0033B997 /* DCRefresher Reborn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DCRefresher Reborn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AB4BFBA2BE33DCB0033B997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AB4BFBC2BE33DCB0033B997 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1AB4BFBE2BE33DCC0033B997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AB4BFC32BE33DCC0033B997 /* DCRefresher_Reborn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DCRefresher_Reborn.entitlements; sourceTree = "<group>"; };
+		1AB4BFCF2BE35E0D0033B997 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		1AB4BFD12BE3706A0033B997 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		1AB4C0662BE376A70033B997 /* views */ = {isa = PBXFileReference; lastKnownFileType = folder; name = views; path = ../../dist/views; sourceTree = "<group>"; };
+		1AB4C0672BE376A70033B997 /* option.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = option.bundle.js; path = ../../dist/option.bundle.js; sourceTree = "<group>"; };
+		1AB4C0682BE376A70033B997 /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = manifest.json; path = ../../dist/manifest.json; sourceTree = "<group>"; };
+		1AB4C0692BE376A70033B997 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ../../dist/assets; sourceTree = "<group>"; };
+		1AB4C06A2BE376A70033B997 /* refresher.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = refresher.bundle.js; path = ../../dist/refresher.bundle.js; sourceTree = "<group>"; };
+		1AB4C06B2BE376A70033B997 /* refresher.bundle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = refresher.bundle.css; path = ../../dist/refresher.bundle.css; sourceTree = "<group>"; };
+		1AB4C06C2BE376A70033B997 /* background.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../dist/background.js; sourceTree = "<group>"; };
+		1AB4C0762BE379F50033B997 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1AD013AC2BDF0DD2002C385E /* DCRefresher Reborn Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DCRefresher Reborn Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD013B12BDF0DD2002C385E /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		1AD013B32BDF0DD2002C385E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AD013B42BDF0DD2002C385E /* DCRefresher_Reborn_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DCRefresher_Reborn_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AB4BFB52BE33DCB0033B997 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD013A92BDF0DD2002C385E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AB4BFB92BE33DCB0033B997 /* DCRefresher Reborn */ = {
+			isa = PBXGroup;
+			children = (
+				1AB4BFBA2BE33DCB0033B997 /* AppDelegate.swift */,
+				1AB4BFBC2BE33DCB0033B997 /* ViewController.swift */,
+				1AB4BFD12BE3706A0033B997 /* WindowController.swift */,
+				1AB4C0762BE379F50033B997 /* Main.storyboard */,
+				1AB4BFBE2BE33DCC0033B997 /* Assets.xcassets */,
+				1AB4BFC32BE33DCC0033B997 /* DCRefresher_Reborn.entitlements */,
+				1AB4BFCE2BE35DAB0033B997 /* Resources */,
+			);
+			path = "DCRefresher Reborn";
+			sourceTree = "<group>";
+		};
+		1AB4BFC72BE33E0D0033B997 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AB4BFCE2BE35DAB0033B997 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1AB4BFCF2BE35E0D0033B997 /* Icon.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1AB4C0652BE3768C0033B997 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1AB4C0682BE376A70033B997 /* manifest.json */,
+				1AB4C06C2BE376A70033B997 /* background.js */,
+				1AB4C0672BE376A70033B997 /* option.bundle.js */,
+				1AB4C06A2BE376A70033B997 /* refresher.bundle.js */,
+				1AB4C06B2BE376A70033B997 /* refresher.bundle.css */,
+				1AB4C0662BE376A70033B997 /* views */,
+				1AB4C0692BE376A70033B997 /* assets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1AD013862BDF0DD1002C385E = {
+			isa = PBXGroup;
+			children = (
+				1AB4BFB92BE33DCB0033B997 /* DCRefresher Reborn */,
+				1AD013B02BDF0DD2002C385E /* DCRefresher Reborn Extension */,
+				1AD013902BDF0DD1002C385E /* Products */,
+				1AB4BFC72BE33E0D0033B997 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1AD013902BDF0DD1002C385E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AD013AC2BDF0DD2002C385E /* DCRefresher Reborn Extension.appex */,
+				1AB4BFB82BE33DCB0033B997 /* DCRefresher Reborn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AD013B02BDF0DD2002C385E /* DCRefresher Reborn Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1AD013B12BDF0DD2002C385E /* SafariWebExtensionHandler.swift */,
+				1AD013B32BDF0DD2002C385E /* Info.plist */,
+				1AD013B42BDF0DD2002C385E /* DCRefresher_Reborn_Extension.entitlements */,
+				1AB4C0652BE3768C0033B997 /* Resources */,
+			);
+			path = "DCRefresher Reborn Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AB4BFB72BE33DCB0033B997 /* DCRefresher Reborn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AB4BFC42BE33DCC0033B997 /* Build configuration list for PBXNativeTarget "DCRefresher Reborn" */;
+			buildPhases = (
+				1AB4BFB42BE33DCB0033B997 /* Sources */,
+				1AB4BFB52BE33DCB0033B997 /* Frameworks */,
+				1AB4BFB62BE33DCB0033B997 /* Resources */,
+				1AB4BFCB2BE33E0D0033B997 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AB4BFCA2BE33E0D0033B997 /* PBXTargetDependency */,
+			);
+			name = "DCRefresher Reborn";
+			productName = "DCRefresher Reborn";
+			productReference = 1AB4BFB82BE33DCB0033B997 /* DCRefresher Reborn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AD013AB2BDF0DD2002C385E /* DCRefresher Reborn Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AD013B72BDF0DD2002C385E /* Build configuration list for PBXNativeTarget "DCRefresher Reborn Extension" */;
+			buildPhases = (
+				1AD013A82BDF0DD2002C385E /* Sources */,
+				1AD013A92BDF0DD2002C385E /* Frameworks */,
+				1AD013AA2BDF0DD2002C385E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DCRefresher Reborn Extension";
+			productName = "DCRefresher Reborn Extension";
+			productReference = 1AD013AC2BDF0DD2002C385E /* DCRefresher Reborn Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AD013872BDF0DD1002C385E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					1AB4BFB72BE33DCB0033B997 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					1AD013AB2BDF0DD2002C385E = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 1AD0138A2BDF0DD1002C385E /* Build configuration list for PBXProject "DCRefresher Reborn" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				ko,
+			);
+			mainGroup = 1AD013862BDF0DD1002C385E;
+			productRefGroup = 1AD013902BDF0DD1002C385E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AB4BFB72BE33DCB0033B997 /* DCRefresher Reborn */,
+				1AD013AB2BDF0DD2002C385E /* DCRefresher Reborn Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AB4BFB62BE33DCB0033B997 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB4C07E2BE3A6600033B997 /* Main.storyboard in Resources */,
+				1AB4BFD02BE35E0D0033B997 /* Icon.png in Resources */,
+				1AB4BFBF2BE33DCC0033B997 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD013AA2BDF0DD2002C385E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB4C06E2BE376A70033B997 /* option.bundle.js in Resources */,
+				1AB4C0702BE376A70033B997 /* assets in Resources */,
+				1AB4C0732BE376A70033B997 /* background.js in Resources */,
+				1AB4C06F2BE376A70033B997 /* manifest.json in Resources */,
+				1AB4C0722BE376A70033B997 /* refresher.bundle.css in Resources */,
+				1AB4C06D2BE376A70033B997 /* views in Resources */,
+				1AB4C0712BE376A70033B997 /* refresher.bundle.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AB4BFB42BE33DCB0033B997 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB4BFBD2BE33DCB0033B997 /* ViewController.swift in Sources */,
+				1AB4BFD22BE3706A0033B997 /* WindowController.swift in Sources */,
+				1AB4BFBB2BE33DCB0033B997 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD013A82BDF0DD2002C385E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD013B22BDF0DD2002C385E /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AB4BFCA2BE33E0D0033B997 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AD013AB2BDF0DD2002C385E /* DCRefresher Reborn Extension */;
+			targetProxy = 1AB4BFC92BE33E0D0033B997 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1AB4BFC52BE33DCC0033B997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "DCRefresher Reborn/DCRefresher_Reborn.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 3SC5M9PT96;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "DCRefresher Reborn";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 3.11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GST.DCRefresher-Reborn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1AB4BFC62BE33DCC0033B997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "DCRefresher Reborn/DCRefresher_Reborn.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 3SC5M9PT96;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "DCRefresher Reborn";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 3.11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GST.DCRefresher-Reborn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1AD013B52BDF0DD2002C385E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1AD013B62BDF0DD2002C385E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1AD013B82BDF0DD2002C385E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "DCRefresher Reborn Extension/DCRefresher_Reborn_Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 3SC5M9PT96;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DCRefresher Reborn Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DCRefresher Reborn Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 3.11.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GST.DCRefresher-Reborn.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1AD013B92BDF0DD2002C385E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "DCRefresher Reborn Extension/DCRefresher_Reborn_Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 3SC5M9PT96;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DCRefresher Reborn Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DCRefresher Reborn Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 3.11.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GST.DCRefresher-Reborn.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AB4BFC42BE33DCC0033B997 /* Build configuration list for PBXNativeTarget "DCRefresher Reborn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AB4BFC52BE33DCC0033B997 /* Debug */,
+				1AB4BFC62BE33DCC0033B997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AD0138A2BDF0DD1002C385E /* Build configuration list for PBXProject "DCRefresher Reborn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD013B52BDF0DD2002C385E /* Debug */,
+				1AD013B62BDF0DD2002C385E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AD013B72BDF0DD2002C385E /* Build configuration list for PBXNativeTarget "DCRefresher Reborn Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD013B82BDF0DD2002C385E /* Debug */,
+				1AD013B92BDF0DD2002C385E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AD013872BDF0DD1002C385E /* Project object */;
+}
