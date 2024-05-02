@@ -21,6 +21,7 @@
 		1AB4C0722BE376A70033B997 /* refresher.bundle.css in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4C06B2BE376A70033B997 /* refresher.bundle.css */; };
 		1AB4C0732BE376A70033B997 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4C06C2BE376A70033B997 /* background.js */; };
 		1AB4C07E2BE3A6600033B997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4C0762BE379F50033B997 /* Main.storyboard */; };
+		1AB4C0802BE3B6D70033B997 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4C07F2BE3B6D70033B997 /* Credits.rtf */; };
 		1AD013B22BDF0DD2002C385E /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD013B12BDF0DD2002C385E /* SafariWebExtensionHandler.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		1AB4C06B2BE376A70033B997 /* refresher.bundle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = refresher.bundle.css; path = ../../dist/refresher.bundle.css; sourceTree = "<group>"; };
 		1AB4C06C2BE376A70033B997 /* background.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../dist/background.js; sourceTree = "<group>"; };
 		1AB4C0762BE379F50033B997 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1AB4C07F2BE3B6D70033B997 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		1AD013AC2BDF0DD2002C385E /* DCRefresher Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DCRefresher Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD013B12BDF0DD2002C385E /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
 		1AD013B32BDF0DD2002C385E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				1AB4BFBE2BE33DCC0033B997 /* Assets.xcassets */,
 				1AB4BFC32BE33DCC0033B997 /* DCRefresher_Reborn.entitlements */,
 				1AB4BFCE2BE35DAB0033B997 /* Resources */,
+				1AB4C07F2BE3B6D70033B997 /* Credits.rtf */,
 			);
 			path = "DCRefresher Reborn";
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				1AB4C07E2BE3A6600033B997 /* Main.storyboard in Resources */,
 				1AB4BFD02BE35E0D0033B997 /* Icon.png in Resources */,
 				1AB4BFBF2BE33DCC0033B997 /* Assets.xcassets in Resources */,
+				1AB4C0802BE3B6D70033B997 /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
