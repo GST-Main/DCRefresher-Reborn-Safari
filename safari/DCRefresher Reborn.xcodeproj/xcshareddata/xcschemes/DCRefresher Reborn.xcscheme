@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1AB4BFB72BE33DCB0033B997"
-               BuildableName = "DCRefresher Reborn.app"
-               BlueprintName = "DCRefresher Reborn"
+               BuildableName = "DCRefresher Safari.app"
+               BlueprintName = "DCRefresher Safari"
                ReferencedContainer = "container:DCRefresher Reborn.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1AB4BFB72BE33DCB0033B997"
-            BuildableName = "DCRefresher Reborn.app"
-            BlueprintName = "DCRefresher Reborn"
+            BuildableName = "DCRefresher Safari.app"
+            BlueprintName = "DCRefresher Safari"
             ReferencedContainer = "container:DCRefresher Reborn.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1AB4BFB72BE33DCB0033B997"
-            BuildableName = "DCRefresher Reborn.app"
-            BlueprintName = "DCRefresher Reborn"
+            BuildableName = "DCRefresher Safari.app"
+            BlueprintName = "DCRefresher Safari"
             ReferencedContainer = "container:DCRefresher Reborn.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
