@@ -27,14 +27,16 @@ export default {
             desc: "데이터를 내보냅니다.",
             type: "check",
             default: false,
-            advanced: true
+            advanced: true,
+            safariCompatible: -1
         },
         importData: {
             name: "데이터 가져오기",
             desc: "데이터를 가져옵니다.",
             type: "check",
             default: false,
-            advanced: true
+            advanced: true,
+            safariCompatible: -1
         },
         clearData: {
             name: "⚠️데이터 초기화⚠️",

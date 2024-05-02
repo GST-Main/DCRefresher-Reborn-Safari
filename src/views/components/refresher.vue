@@ -219,7 +219,11 @@
 
                     <div
                         v-for="setting in Object.keys(settings[module])"
-                        v-if="settings[module][setting].advanced"
+                        v-if="
+                            settings[module][setting].advanced &&
+                            !(settings[module][setting].safariCompatible === -1 && client === 'Safari') &&
+                            !(settings[module][setting].safariCompatible === 1 && client !== 'Safari')
+                        "
                         :data-changed="settings[module][setting].value !== settings[module][setting].default"
                         class="refresher-setting">
                         <div class="info">
@@ -296,15 +300,17 @@
                 key="tab3"
                 class="tab tab3">
                 <div style="margin-bottom: 15px">
-                    <h2>데이터 관리</h2>
-
-                    <div style="margin-top: 5px; float: left">
-                        <button @click="exportBlock">내보내기</button>
-                        <button @click="importBlock">가져오기</button>
+                    <div v-if="client !== 'Safari'">
+                        <h2>데이터 관리</h2>
+    
+                        <div style="margin-top: 5px; float: left">
+                            <button @click="exportBlock">내보내기</button>
+                            <button @click="importBlock">가져오기</button>
+                        </div>
+    
+                        <br>
+                        <br>
                     </div>
-
-                    <br>
-                    <br>
 
                     <h2>차단 모드</h2>
 
@@ -395,7 +401,9 @@
                 key="tab4"
                 class="tab tab4">
 
-                <div style="margin-bottom: 15px">
+                <div 
+                    v-if="client !== 'Safari'" 
+                    style="margin-bottom: 15px">
                     <h2>데이터 관리</h2>
 
                     <div style="margin-top: 5px; float: left">
