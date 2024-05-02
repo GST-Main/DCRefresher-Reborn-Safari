@@ -6,6 +6,15 @@
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES"
       buildArchitectures = "Automatic">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;">
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -16,8 +25,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1AB4BFB72BE33DCB0033B997"
-               BuildableName = "DCRefresher Safari.app"
-               BlueprintName = "DCRefresher Safari"
+               BuildableName = "DCRefresher Rise.app"
+               BlueprintName = "DCRefresher Rise"
                ReferencedContainer = "container:DCRefresher Reborn.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +54,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1AB4BFB72BE33DCB0033B997"
-            BuildableName = "DCRefresher Safari.app"
-            BlueprintName = "DCRefresher Safari"
+            BuildableName = "DCRefresher Rise.app"
+            BlueprintName = "DCRefresher Rise"
             ReferencedContainer = "container:DCRefresher Reborn.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +71,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1AB4BFB72BE33DCB0033B997"
-            BuildableName = "DCRefresher Safari.app"
-            BlueprintName = "DCRefresher Safari"
+            BuildableName = "DCRefresher Rise.app"
+            BlueprintName = "DCRefresher Rise"
             ReferencedContainer = "container:DCRefresher Reborn.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

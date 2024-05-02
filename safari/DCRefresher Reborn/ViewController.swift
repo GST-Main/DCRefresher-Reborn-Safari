@@ -17,7 +17,7 @@ class ViewController: NSViewController {
         let logo = NSImage(named: "Icon") ?? NSImage()
         let imageView = NSImageView(image: logo)
         let welcomeText = NSTextField()
-        welcomeText.stringValue = "DCRefresher Safari 설치가 완료됐습니다\nSafari 설정에서 확장프로그램을 활성화 시켜주세요\n원활한 사용을 위해 사이트 접근 권한을 허용해주세요\n"
+        welcomeText.stringValue = "DCRefresher Rise 설치가 완료됐습니다\nSafari 설정에서 확장프로그램을 활성화 시켜주세요\n원활한 사용을 위해 사이트 접근 권한을 허용해주세요\n"
         welcomeText.alignment = .center
         welcomeText.isEditable = false
         welcomeText.isBezeled = false

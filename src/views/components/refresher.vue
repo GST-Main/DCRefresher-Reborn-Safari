@@ -59,7 +59,7 @@
                              class="icon"/>
                     </div>
                     <div class="text">
-                        <h3>DCRefresher Safari</h3>
+                        <h3>DCRefresher Rise</h3>
                         <p>
                             <span class="version">{{ getVersion() }}</span>
                             <a
@@ -67,6 +67,9 @@
                                 @click="open(link.url)"
                             >{{ link.text }}</a
                             >
+                            <p>
+                                
+                            </p>
                         </p>
                         <p>
                             <span
@@ -606,11 +609,11 @@ export default Vue.extend({
             blockKeyNames: BLOCK_TYPE_NAMES,
             links: [
                 {
-                    text: "GitHub",
+                    text: "GitHub(원본)",
                     url: "https://github.com/green1052/DCRefresher-Reborn"
                 },
                 {
-                    text: "Discord",
+                    text: "Discord(원본)",
                     url: "https://discord.gg/SSW6Zuyjz6"
                 },
                 {

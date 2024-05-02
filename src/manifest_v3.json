@@ -1,6 +1,6 @@
 {
-    "name": "DCRefresher Safari",
-    "short_name": "DCRefresher Safari",
+    "name": "DCRefresher Rise",
+    "short_name": "DCRefresher Rise",
     "manifest_version": 3,
     "permissions": [
         "activeTab",

@@ -10,7 +10,7 @@
 		1AB4BFBB2BE33DCB0033B997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB4BFBA2BE33DCB0033B997 /* AppDelegate.swift */; };
 		1AB4BFBD2BE33DCB0033B997 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB4BFBC2BE33DCB0033B997 /* ViewController.swift */; };
 		1AB4BFBF2BE33DCC0033B997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4BFBE2BE33DCC0033B997 /* Assets.xcassets */; };
-		1AB4BFC82BE33E0D0033B997 /* DCRefresher Safari Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1AD013AC2BDF0DD2002C385E /* DCRefresher Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1AB4BFC82BE33E0D0033B997 /* DCRefresher Rise Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1AD013AC2BDF0DD2002C385E /* DCRefresher Rise Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1AB4BFD02BE35E0D0033B997 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4BFCF2BE35E0D0033B997 /* Icon.png */; };
 		1AB4BFD22BE3706A0033B997 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB4BFD12BE3706A0033B997 /* WindowController.swift */; };
 		1AB4C06D2BE376A70033B997 /* views in Resources */ = {isa = PBXBuildFile; fileRef = 1AB4C0662BE376A70033B997 /* views */; };
@@ -42,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				1AB4BFC82BE33E0D0033B997 /* DCRefresher Safari Extension.appex in Embed Foundation Extensions */,
+				1AB4BFC82BE33E0D0033B997 /* DCRefresher Rise Extension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1AB4BFB82BE33DCB0033B997 /* DCRefresher Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DCRefresher Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AB4BFB82BE33DCB0033B997 /* DCRefresher Rise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DCRefresher Rise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB4BFBA2BE33DCB0033B997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AB4BFBC2BE33DCB0033B997 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1AB4BFBE2BE33DCC0033B997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		1AB4C06C2BE376A70033B997 /* background.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../dist/background.js; sourceTree = "<group>"; };
 		1AB4C0762BE379F50033B997 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1AB4C07F2BE3B6D70033B997 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
-		1AD013AC2BDF0DD2002C385E /* DCRefresher Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DCRefresher Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD013AC2BDF0DD2002C385E /* DCRefresher Rise Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DCRefresher Rise Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD013B12BDF0DD2002C385E /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
 		1AD013B32BDF0DD2002C385E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AD013B42BDF0DD2002C385E /* DCRefresher_Reborn_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DCRefresher_Reborn_Extension.entitlements; sourceTree = "<group>"; };
@@ -99,8 +99,8 @@
 				1AB4C0762BE379F50033B997 /* Main.storyboard */,
 				1AB4BFBE2BE33DCC0033B997 /* Assets.xcassets */,
 				1AB4BFC32BE33DCC0033B997 /* DCRefresher_Reborn.entitlements */,
-				1AB4BFCE2BE35DAB0033B997 /* Resources */,
 				1AB4C07F2BE3B6D70033B997 /* Credits.rtf */,
+				1AB4BFCE2BE35DAB0033B997 /* Resources */,
 			);
 			path = "DCRefresher Reborn";
 			sourceTree = "<group>";
@@ -147,8 +147,8 @@
 		1AD013902BDF0DD1002C385E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1AD013AC2BDF0DD2002C385E /* DCRefresher Safari Extension.appex */,
-				1AB4BFB82BE33DCB0033B997 /* DCRefresher Safari.app */,
+				1AD013AC2BDF0DD2002C385E /* DCRefresher Rise Extension.appex */,
+				1AB4BFB82BE33DCB0033B997 /* DCRefresher Rise.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,9 +167,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1AB4BFB72BE33DCB0033B997 /* DCRefresher Safari */ = {
+		1AB4BFB72BE33DCB0033B997 /* DCRefresher Rise */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1AB4BFC42BE33DCC0033B997 /* Build configuration list for PBXNativeTarget "DCRefresher Safari" */;
+			buildConfigurationList = 1AB4BFC42BE33DCC0033B997 /* Build configuration list for PBXNativeTarget "DCRefresher Rise" */;
 			buildPhases = (
 				1AB4BFB42BE33DCB0033B997 /* Sources */,
 				1AB4BFB52BE33DCB0033B997 /* Frameworks */,
@@ -181,14 +181,14 @@
 			dependencies = (
 				1AB4BFCA2BE33E0D0033B997 /* PBXTargetDependency */,
 			);
-			name = "DCRefresher Safari";
+			name = "DCRefresher Rise";
 			productName = "DCRefresher Reborn";
-			productReference = 1AB4BFB82BE33DCB0033B997 /* DCRefresher Safari.app */;
+			productReference = 1AB4BFB82BE33DCB0033B997 /* DCRefresher Rise.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1AD013AB2BDF0DD2002C385E /* DCRefresher Safari Extension */ = {
+		1AD013AB2BDF0DD2002C385E /* DCRefresher Rise Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1AD013B72BDF0DD2002C385E /* Build configuration list for PBXNativeTarget "DCRefresher Safari Extension" */;
+			buildConfigurationList = 1AD013B72BDF0DD2002C385E /* Build configuration list for PBXNativeTarget "DCRefresher Rise Extension" */;
 			buildPhases = (
 				1AD013A82BDF0DD2002C385E /* Sources */,
 				1AD013A92BDF0DD2002C385E /* Frameworks */,
@@ -198,9 +198,9 @@
 			);
 			dependencies = (
 			);
-			name = "DCRefresher Safari Extension";
+			name = "DCRefresher Rise Extension";
 			productName = "DCRefresher Reborn Extension";
-			productReference = 1AD013AC2BDF0DD2002C385E /* DCRefresher Safari Extension.appex */;
+			productReference = 1AD013AC2BDF0DD2002C385E /* DCRefresher Rise Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -233,8 +233,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1AB4BFB72BE33DCB0033B997 /* DCRefresher Safari */,
-				1AD013AB2BDF0DD2002C385E /* DCRefresher Safari Extension */,
+				1AB4BFB72BE33DCB0033B997 /* DCRefresher Rise */,
+				1AD013AB2BDF0DD2002C385E /* DCRefresher Rise Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -291,7 +291,7 @@
 /* Begin PBXTargetDependency section */
 		1AB4BFCA2BE33E0D0033B997 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1AD013AB2BDF0DD2002C385E /* DCRefresher Safari Extension */;
+			target = 1AD013AB2BDF0DD2002C385E /* DCRefresher Rise Extension */;
 			targetProxy = 1AB4BFC92BE33E0D0033B997 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -305,12 +305,12 @@
 				CODE_SIGN_ENTITLEMENTS = "DCRefresher Reborn/DCRefresher_Reborn.entitlements";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = 3SC5M9PT96;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "DCRefresher Safari";
+				INFOPLIST_KEY_CFBundleDisplayName = "DCRefresher Rise";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -338,12 +338,12 @@
 				CODE_SIGN_ENTITLEMENTS = "DCRefresher Reborn/DCRefresher_Reborn.entitlements";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = 3SC5M9PT96;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "DCRefresher Safari";
+				INFOPLIST_KEY_CFBundleDisplayName = "DCRefresher Rise";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -552,7 +552,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1AB4BFC42BE33DCC0033B997 /* Build configuration list for PBXNativeTarget "DCRefresher Safari" */ = {
+		1AB4BFC42BE33DCC0033B997 /* Build configuration list for PBXNativeTarget "DCRefresher Rise" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1AB4BFC52BE33DCC0033B997 /* Debug */,
@@ -570,7 +570,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1AD013B72BDF0DD2002C385E /* Build configuration list for PBXNativeTarget "DCRefresher Safari Extension" */ = {
+		1AD013B72BDF0DD2002C385E /* Build configuration list for PBXNativeTarget "DCRefresher Rise Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1AD013B82BDF0DD2002C385E /* Debug */,

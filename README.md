@@ -2,7 +2,7 @@
     <img src="https://github.com/green1052/DCRefresher-Reborn/raw/main/src/assets/icons/logo/Icon.png" width="200px"/>
 </p>
 
-# DCRefresher Reborn
+# DCRefresher Rise
 
 원본: DCRefresher - DCRefresher Reborn
 
