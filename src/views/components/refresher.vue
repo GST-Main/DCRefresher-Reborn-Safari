@@ -114,7 +114,11 @@
 
                         <div
                             v-for="setting in Object.keys(settings[module])"
-                            v-if="!settings[module][setting].advanced"
+                            v-if="
+                                !settings[module][setting].advanced && 
+                                !(settings[module][setting].safariCompatible === -1 && client === 'Safari') &&
+                                !(settings[module][setting].safariCompatible === 1 && client !== 'Safari')
+                            "
                             :data-changed="settings[module][setting].value !== settings[module][setting].default"
                             class="refresher-setting">
                             <div class="info">

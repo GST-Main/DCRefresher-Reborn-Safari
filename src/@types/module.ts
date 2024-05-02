@@ -35,6 +35,7 @@ declare global {
         value: Value;
         default: Value;
         advanced?: boolean;
+        safariCompatible?: -1 | 0 | 1;
     }
 
     interface RefresherCheckSettings
