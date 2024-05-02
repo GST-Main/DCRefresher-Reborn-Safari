@@ -4,34 +4,28 @@
 
 # DCRefresher Reborn
 
-<a href="https://hits.seeyoufarm.com">
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgreen1052%2FDCRefresher-Reborn&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
-</a>
+원본: DCRefresher - DCRefresher Reborn
 
-<a href="https://www.buymeacoffee.com/green1052" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 30px !important;width: 120px !important;">
-</a>
+**이 프로젝트는 [DCRefersher Reborn](https://github.com/green1052/DCRefresher-Reborn)의 사파리 지원을 위한 포크프로젝트 입니다. 대부분의 기여는 원저작자들에게 있습니다.**
 
-원본: DCRefresher
+## 현재 미구현
 
-디시인사이드 개선 확장 프로그램
+Safari의 독보적인 성능으로 인해 일부 기능이 제거되었습니다. (추후 수정)
 
-## 디스코드
+* 차단, 메모 내역 내보내기, 가져오기
+* 단축키 기능
+* 기타 확인되지 않은 기능
 
-[초대 링크](https://discord.gg/SSW6Zuyjz6)
+## 빌드
 
-## 기능
+먼저 스크립트와 페이지를 빌드 합니다.
+```
+pnpm install
 
-[기능 목록](https://dcrefresher.green1052.com/features.html)
+pnpm dev:mv3
+# or
+pnpm build:mv3
+```
+엑스코드 프로젝트를 열어서 프로젝트 설정 - Signing & Capabillites - Team을 설정 후 빌드
 
-## 설치
-
-[설치 방법](https://dcrefresher.green1052.com/install.html)
-
-## 마이그레이션
-
-[마이그레이션 방법](https://dcrefresher.green1052.com/migration.html)
-
-## 개발
-
-[개발 문서](https://dcrefresher.green1052.com/development/getting-started.html)
+앱 서명이 불가능하면 Safari 설정에서 "서명되지 않은 확장 프로그램 허용" 옵션을 켜야 합니다.
