@@ -18,7 +18,7 @@ export default {
         },
         changeDCFont: {
             name: "디시인사이드 폰트 교체",
-            desc: "미리보기 창 같은 DCRefresher Reborn의 폰트 뿐만 아니라 디시인사이드의 폰트까지 교체합니다.",
+            desc: "미리보기 창 같은 DCRefresher Rise의 폰트 뿐만 아니라 디시인사이드의 폰트까지 교체합니다.",
             type: "check",
             default: true
         },

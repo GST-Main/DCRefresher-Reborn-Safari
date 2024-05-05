@@ -1,6 +1,6 @@
 {
-    "name": "DCRefresher Reborn",
-    "short_name": "DCRefresher Reborn",
+    "name": "DCRefresher Rise",
+    "short_name": "DCRefresher Rise",
     "manifest_version": 3,
     "permissions": [
         "activeTab",
@@ -17,9 +17,9 @@
     },
     "action": {
         "default_icon": {
-            "128": "assets/icons/logo/icon_40pt@3x.png",
-            "180": "assets/icons/logo/icon_60pt@3x.png",
-            "1024": "assets/icons/logo/Icon.png"
+            "16": "assets/icons/toolbar-icon-16.png",
+            "32": "assets/icons/toolbar-icon-32.png",
+            "64": "assets/icons/toolbar-icon-64.png"
         },
         "default_popup": "views/index.html"
     },

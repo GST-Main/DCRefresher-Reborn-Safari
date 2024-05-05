@@ -26,7 +26,15 @@ export default {
             name: "Ctrl 대댓글 체크",
             desc: "Ctrl키를 누른 상태로 댓글을 클릭하면 대댓글도 체크합니다.",
             type: "check",
-            default: false
+            default: false,
+            safariCompatible: -1
+        },
+        checkCommentViaOption: {
+            name: "Option 대댓글 체크",
+            desc: "Option(⌥)키를 누른 상태로 댓글을 클릭하면 대댓글도 체크합니다.",
+            type: "check",
+            default: false,
+            safariCompatible: 1
         },
         checkTempAccount: {
             name: "깡계 체크",
@@ -71,7 +79,12 @@ export default {
                     }
 
                     const li = $element.closest("li");
-                    if (this.status.checkCommentViaCtrl && ev.ctrlKey && !li.attr("id")?.startsWith("reply_")) {
+                    const isSafari = /Safari/.test(navigator.userAgent)
+                    if (!isSafari && this.status.checkCommentViaCtrl && ev.ctrlKey && !li.attr("id")?.startsWith("reply_")) {
+                        for (const input of li.next().find(".article_chkbox")) {
+                            (input as HTMLInputElement).checked = (ev.target as HTMLInputElement).checked;
+                        }
+                    } else if (isSafari && this.status.checkCommentViaOption && ev.altKey && !li.attr("id")?.startsWith("reply_")) {
                         for (const input of li.next().find(".article_chkbox")) {
                             (input as HTMLInputElement).checked = (ev.target as HTMLInputElement).checked;
                         }
@@ -101,6 +114,7 @@ export default {
         checkAllTargetUser: RefresherCheckSettings;
         checkViaShift: RefresherCheckSettings;
         checkCommentViaCtrl: RefresherCheckSettings;
+        checkCommentViaOption: RefresherCheckSettings;
         checkTempAccount: RefresherCheckSettings;
     };
     require: ["filter"];

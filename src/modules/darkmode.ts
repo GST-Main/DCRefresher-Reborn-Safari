@@ -67,7 +67,7 @@ const contentColorFix = (element: HTMLElement) => {
 export default {
     name: "다크 모드",
     description:
-        "페이지와 DCRefresher Reborn의 창을 어두운 색상으로 변경합니다.",
+        "페이지와 DCRefresher Rise의 창을 어두운 색상으로 변경합니다.",
     memory: {
         uuid: null,
         uuid2: null,

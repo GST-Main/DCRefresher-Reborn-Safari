@@ -16,10 +16,10 @@ import browser from "webextension-polyfill";
         let content: string;
 
         if (installed === true) {
-            content = `DCRefresher Reborn ${currentVersion}이 설치되었습니다, 오류 및 개선사항은 여기에서 알려주세요.`;
+            content = `DCRefresher Rise ${currentVersion}이 설치되었습니다, 오류 및 개선사항은 여기에서 알려주세요.`;
             storage.remove("refresher.firstInstall");
         } else {
-            content = `DCRefresher Reborn이 ${currentVersion}(으)로 업데이트되었습니다, 변경 사항은 여기에서 볼 수 있습니다.`;
+            content = `DCRefresher Rise가 ${currentVersion}(으)로 업데이트되었습니다, 변경 사항은 여기에서 볼 수 있습니다.`;
             storage.set("refresher.updated", false);
         }
 

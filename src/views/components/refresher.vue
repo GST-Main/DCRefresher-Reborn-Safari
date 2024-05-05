@@ -35,6 +35,7 @@
                     모듈
                 </p>
                 <p
+                    v-if="this.client !== 'Safari'"
                     :class="{ active: tab === 6 }"
                     @click="() => (tab = 6)">
                     단축키
@@ -58,7 +59,7 @@
                              class="icon"/>
                     </div>
                     <div class="text">
-                        <h3>DCRefresher Reborn</h3>
+                        <h3>DCRefresher Rise</h3>
                         <p>
                             <span class="version">{{ getVersion() }}</span>
                             <a
@@ -66,6 +67,9 @@
                                 @click="open(link.url)"
                             >{{ link.text }}</a
                             >
+                            <p>
+                                
+                            </p>
                         </p>
                         <p>
                             <span
@@ -113,7 +117,11 @@
 
                         <div
                             v-for="setting in Object.keys(settings[module])"
-                            v-if="!settings[module][setting].advanced"
+                            v-if="
+                                !settings[module][setting].advanced && 
+                                !(settings[module][setting].safariCompatible === -1 && client === 'Safari') &&
+                                !(settings[module][setting].safariCompatible === 1 && client !== 'Safari')
+                            "
                             :data-changed="settings[module][setting].value !== settings[module][setting].default"
                             class="refresher-setting">
                             <div class="info">
@@ -214,7 +222,11 @@
 
                     <div
                         v-for="setting in Object.keys(settings[module])"
-                        v-if="settings[module][setting].advanced"
+                        v-if="
+                            settings[module][setting].advanced &&
+                            !(settings[module][setting].safariCompatible === -1 && client === 'Safari') &&
+                            !(settings[module][setting].safariCompatible === 1 && client !== 'Safari')
+                        "
                         :data-changed="settings[module][setting].value !== settings[module][setting].default"
                         class="refresher-setting">
                         <div class="info">
@@ -291,15 +303,17 @@
                 key="tab3"
                 class="tab tab3">
                 <div style="margin-bottom: 15px">
-                    <h2>데이터 관리</h2>
-
-                    <div style="margin-top: 5px; float: left">
-                        <button @click="exportBlock">내보내기</button>
-                        <button @click="importBlock">가져오기</button>
+                    <div v-if="client !== 'Safari'">
+                        <h2>데이터 관리</h2>
+    
+                        <div style="margin-top: 5px; float: left">
+                            <button @click="exportBlock">내보내기</button>
+                            <button @click="importBlock">가져오기</button>
+                        </div>
+    
+                        <br>
+                        <br>
                     </div>
-
-                    <br>
-                    <br>
 
                     <h2>차단 모드</h2>
 
@@ -390,7 +404,9 @@
                 key="tab4"
                 class="tab tab4">
 
-                <div style="margin-bottom: 15px">
+                <div 
+                    v-if="client !== 'Safari'" 
+                    style="margin-bottom: 15px">
                     <h2>데이터 관리</h2>
 
                     <div style="margin-top: 5px; float: left">
@@ -488,21 +504,23 @@
                 key="tab7"
                 class="tab tab7">
                 <div class="shortcut-lists">
-                    <div
-                        v-for="shortcut in shortcuts"
-                        v-if="shortcut.description.length"
-                        class="refresher-shortcut">
-                        <p class="description">{{ shortcut.description }}</p>
-                        <div class="key">
-                            <refresher-bubble
-                                v-for="key in shortcut.shortcut.match(
-                                    shortcutRegex
-                                )"
-                                :key="key"
-                                :text="key"/>
-                            <refresher-bubble
-                                v-if="!shortcutRegex.test(shortcut.shortcut)"
-                                text="키 없음"/>
+                    <div v-for="shortcut in shortcuts">
+                        <div v-if="shortcut.description">
+                           <div v-if="shortcut.description.length"
+                                class="refresher-shortcut">
+                                <p class="description">{{ shortcut.description }}</p>
+                                <div class="key">
+                                    <refresher-bubble
+                                        v-for="key in shortcut.shortcut.match(
+                                            shortcutRegex
+                                        )"
+                                        :key="key"
+                                        :text="key"/>
+                                    <refresher-bubble
+                                        v-if="!shortcutRegex.test(shortcut.shortcut)"
+                                        text="키 없음"/>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -555,6 +573,7 @@ interface RefresherData {
     blockKeyNames: typeof BLOCK_TYPE_NAMES;
     links: { text: string; url: string }[];
     ipDatabaseVersion: string;
+    client: string;
 }
 
 const port = browser.runtime.connect({name: "refresherInternal"});
@@ -590,11 +609,11 @@ export default Vue.extend({
             blockKeyNames: BLOCK_TYPE_NAMES,
             links: [
                 {
-                    text: "GitHub",
+                    text: "GitHub(원본)",
                     url: "https://github.com/green1052/DCRefresher-Reborn"
                 },
                 {
-                    text: "Discord",
+                    text: "Discord(원본)",
                     url: "https://discord.gg/SSW6Zuyjz6"
                 },
                 {
@@ -602,7 +621,8 @@ export default Vue.extend({
                     url: "https://www.buymeacoffee.com/green1052"
                 }
             ],
-            ipDatabaseVersion: ""
+            ipDatabaseVersion: "",
+            client: "Unknown"
         };
     },
     methods: {
@@ -689,7 +709,7 @@ export default Vue.extend({
         },
         openShortcutSettings() {
             browser.tabs.create({
-                url: /Firefox/.test(navigator.userAgent)
+                url: this.client === "Firefox"
                     ? "about:addons"
                     : "chrome://extensions/shortcuts"
             });
@@ -974,6 +994,14 @@ export default Vue.extend({
         }
     },
     async mounted() {
+        if (/Safari/.test(navigator.userAgent)) {
+            this.client = "Safari"
+        } else if (/Firefox/.test(navigator.userAgent)) {
+            this.client = "Firefox"
+        } else {
+            this.client = "Chrome"
+        }
+
         setTimeout(() => {
             this.karyl = true;
         }, 10000);
